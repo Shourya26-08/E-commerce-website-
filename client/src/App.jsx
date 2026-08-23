@@ -1,0 +1,4 @@
+import {Routes,Route} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';import Product from './pages/Product';import Cart from './pages/Cart';import Login from './pages/Login';import Register from './pages/Register';import Orders from './pages/Orders';import CheckoutResult from './pages/CheckoutResult';
+export default function App(){return <><Navbar/><main className="container"><Routes><Route path="/" element={<Home/>}/><Route path="/products/:id" element={<Product/>}/><Route path="/cart" element={<Cart/>}/><Route path="/login" element={<Login/>}/><Route path="/register" element={<Register/>}/><Route path="/orders" element={<Orders/>}/><Route path="/checkout/success" element={<CheckoutResult success/>}/><Route path="/checkout/cancel" element={<CheckoutResult/>}/></Routes></main><footer>© {new Date().getFullYear()} ShopSphere · Level 3 E-Commerce Task</footer></>}
