@@ -1,0 +1,1 @@
+{"name":"shopsphere-server","version":"1.0.0","type":"module","scripts":{"start":"node src/server.js","dev":"node --watch src/server.js","seed":"node scripts/seed.js"},"dependencies":{"bcryptjs":"latest","cors":"latest","dotenv":"latest","express":"latest","jsonwebtoken":"latest","mongoose":"latest","stripe":"latest"}}
